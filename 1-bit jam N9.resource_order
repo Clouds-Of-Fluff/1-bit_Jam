@@ -2,12 +2,12 @@
   "FolderOrderSettings":[
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
     {"name":"Objects","order":3,"path":"folders/Objects.yy",},
-    {"name":"SYSTEM","order":3,"path":"folders/Objects/SYSTEM.yy",},
     {"name":"InGame","order":1,"path":"folders/Objects/InGame.yy",},
     {"name":"Office","order":3,"path":"folders/Objects/InGame/Office.yy",},
     {"name":"Player","order":2,"path":"folders/Objects/InGame/Player.yy",},
     {"name":"UI","order":1,"path":"folders/Objects/InGame/UI.yy",},
     {"name":"OutGame","order":2,"path":"folders/Objects/OutGame.yy",},
+    {"name":"SYSTEM","order":3,"path":"folders/Objects/SYSTEM.yy",},
     {"name":"Rooms","order":2,"path":"folders/Rooms.yy",},
     {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
     {"name":"Sounds","order":4,"path":"folders/Sounds.yy",},
