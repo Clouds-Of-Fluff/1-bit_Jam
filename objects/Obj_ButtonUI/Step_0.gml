@@ -1,9 +1,44 @@
+#region Questions
+// Chage state and elimination
+if (image_xscale <= 0.9 and image_yscale <= 0.9) {
+    // avisar al controller
+    with (Obj_QuestionsController) {
+        state = QSTATE.TRANSITION;
+        
+    }
+    
+	// destruir ambos botones
+    with (Obj_ButtonUI) {
+        instance_destroy();
+        
+    }
+    
+}
+
+#endregion
+
+
+#region Text
+// Calculate desired size
+var text_w = string_width(text);
+var text_h = string_height(text);
+
+btn_width  = max(min_width, text_w + padding_x * 2);
+btn_height = text_h + padding_y * 2;
+
+#endregion
+
+
 #region Actions
 // Click
-if (point_in_rectangle(mouse_x, mouse_y, x - (sprite_width/2), y - (sprite_height/2), 
-    x + (sprite_width/2), y + (sprite_height/2)) and mouse_check_button_pressed(mb_left)) {
+if (!Obj_QuestionsController.selection_locked and 
+    point_in_rectangle(mouse_x, mouse_y, x - (btn_width/2), y - (btn_height/2), 
+    x + (btn_width/2), y + (btn_height/2)) and mouse_check_button_pressed(mb_left)) {
 	
-    active = !active; // This line return the contrary of the actual value
+    // Change locked
+    Obj_QuestionsController.selection_locked = true;
+    
+    active = false; // False to answer
     
     // Selection
     if (value == 0) {
@@ -13,6 +48,7 @@ if (point_in_rectangle(mouse_x, mouse_y, x - (sprite_width/2), y - (sprite_heigh
         show_debug_message("GOOD ANSWER");
         
     }
+    
     
 }
 
@@ -31,24 +67,3 @@ image_xscale = size;
 image_yscale = size;
 
 #endregion
-
-
-#region Questions
-// Chage state and elimination
-if (image_xscale <= 0.91 and image_yscale <= 0.91) {
-    // avisar al controller
-    with (Obj_QuestionsController) {
-        state = QSTATE.TRANSITION;
-        
-    }
-    
-	// destruir ambos botones
-    with (Obj_ButtonUI) {
-        instance_destroy();
-        
-    }
-    
-}
-
-#endregion
-

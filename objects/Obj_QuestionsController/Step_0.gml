@@ -22,14 +22,14 @@ switch (state) {
     case QSTATE.WAITING:
         if (!buttons_created) {
             // Bad Choice
-            var btn_bad = instance_create_layer(X2-128, Y1+48, "Instances", Obj_ButtonUI);
-            btn_bad.value = bad_value;
-            btn_bad.text = bad_text;
+            var btn_1 = instance_create_layer(X2 - 96, Y1 - 96, "Instances", Obj_ButtonUI);
+            btn_1.value = value1;
+            btn_1.text = text1;
             
             // Good Choice
-            var btn_good = instance_create_layer(X2-72, Y1+48, "Instances", Obj_ButtonUI);
-            btn_good.value = good_value;
-            btn_good.text = good_text;
+            var btn_2 = instance_create_layer(X2 - 96, Y1 - 32, "Instances", Obj_ButtonUI);
+            btn_2.value = value2;
+            btn_2.text = text2;
             
             // Variable
             buttons_created = true;
@@ -48,14 +48,15 @@ switch (state) {
             visible_text = "";
             text_pos = 0;
             
-            bad_value = current_question[1];
-            good_value = current_question[2];
+            // Buttons
+            value1 = current_question[1];
+            value2 = current_question[2];
+            text1 = current_question[3];
+            text2 = current_question[4];
             
             buttons_created = false;
+            selection_locked = false;
             state = QSTATE.WRITING;
-            
-        } else {
-            show_debug_message("No more questions.");
             
         }
         

@@ -11,16 +11,15 @@ text_timer = 0;
 
 // Current State
 state = QSTATE.WRITING;
-// writing = writing
-// waiting = waiting buttons
-// transition = waiting next question
 
 // Buttons
-bad_value = current_question[1];
-good_value = current_question[2];
-bad_text = current_question[3];
-good_text = current_question[4];
+value1 = current_question[1];
+value2 = current_question[2];
+text1 = current_question[3];
+text2 = current_question[4];
 buttons_created = false;
+
+selection_locked = false; // Blocks click in another button
 
 // Misc var
 cam = view_camera[0];

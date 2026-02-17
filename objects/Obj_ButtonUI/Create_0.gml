@@ -8,3 +8,10 @@ image_speed = 0;
 // Question (is assigned by the Obj_QuestionController)
 value = 0;
 text = "";
+
+// Size
+padding_x = 24;  // internal space left/right
+padding_y = 12;
+min_width = 32;  // Minimun wight optional
+btn_width = 0;
+btn_height = 0;
