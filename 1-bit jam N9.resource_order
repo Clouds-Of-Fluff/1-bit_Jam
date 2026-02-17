@@ -1,0 +1,26 @@
+{
+  "FolderOrderSettings":[
+    {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
+    {"name":"Objects","order":3,"path":"folders/Objects.yy",},
+    {"name":"SYSTEM","order":3,"path":"folders/Objects/SYSTEM.yy",},
+    {"name":"InGame","order":1,"path":"folders/Objects/InGame.yy",},
+    {"name":"Office","order":3,"path":"folders/Objects/InGame/Office.yy",},
+    {"name":"Player","order":2,"path":"folders/Objects/InGame/Player.yy",},
+    {"name":"UI","order":1,"path":"folders/Objects/InGame/UI.yy",},
+    {"name":"OutGame","order":2,"path":"folders/Objects/OutGame.yy",},
+    {"name":"Rooms","order":2,"path":"folders/Rooms.yy",},
+    {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
+    {"name":"Sounds","order":4,"path":"folders/Sounds.yy",},
+    {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
+    {"name":"InGame","order":5,"path":"folders/Sprites/InGame.yy",},
+    {"name":"UI","order":1,"path":"folders/Sprites/InGame/UI.yy",},
+    {"name":"OutGame","order":6,"path":"folders/Sprites/OutGame.yy",},
+    {"name":"Tilesets","order":6,"path":"folders/Tilesets.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"Obj_QuestionsController","order":1,"path":"objects/Obj_QuestionsController/Obj_QuestionsController.yy",},
+    {"name":"Rm_Menu","order":1,"path":"rooms/Rm_Menu/Rm_Menu.yy",},
+    {"name":"Scr_Enums","order":1,"path":"scripts/Scr_Enums/Scr_Enums.yy",},
+    {"name":"snake_horns","order":1,"path":"sprites/snake_horns/snake_horns.yy",},
+  ],
+}
