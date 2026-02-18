@@ -15,7 +15,7 @@ if (active) {
 // Reset
 if (accept) {
     if (wait > 0) {
-    	wait -= delta_time/1000000;
+    	wait -= delta_time / 1000000;
         
     } else {
         

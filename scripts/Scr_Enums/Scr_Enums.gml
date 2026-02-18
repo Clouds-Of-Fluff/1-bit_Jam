@@ -5,3 +5,9 @@ enum QSTATE {
     TRANSITION,
     IDLE
 }
+
+enum TSTATE {
+	WRITING,
+    WAIT_INPUT,
+    FINISHED
+}

@@ -1,3 +1,12 @@
+// Block state
+var t = instance_find(Obj_Transitioner, 0);
+if ((instance_exists(Obj_Transitioner) and Obj_Transitioner.progress <= 0) or 
+    (instance_exists(Obj_Transitioner) and t.progress > 0) or 
+    Obj_Game.state != TSTATE.FINISHED) {
+	exit;
+    
+}
+
 // Change of state
 switch (state) {
     
@@ -39,7 +48,6 @@ switch (state) {
     break;
     
     case QSTATE.TRANSITION:
-        index++;
         current_question = Scr_Questions(index);
         
         // Select another question
@@ -56,6 +64,7 @@ switch (state) {
             
             buttons_created = false;
             selection_locked = false;
+            
             state = QSTATE.WRITING;
             
         }

@@ -24,7 +24,6 @@ points = [
 current_point = index;
 ax = points[index][0];
 ay = points[index][1];
-
-move_speed = 0.05; // velocidad del lerp
+move_speed = 0.05; // lerp
 moving = true;
 time = 60;

@@ -3,6 +3,7 @@ draw_set_font(Fnt_Silver);
 
 // Sound
 
+
 // Effects
 gpu_set_tex_filter(false);
 
@@ -15,3 +16,8 @@ window_center();
 
 // Misc
 randomise();
+
+// GAME
+good = 0;
+bad = 0;
+money = 0;

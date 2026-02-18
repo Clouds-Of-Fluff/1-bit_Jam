@@ -1,12 +1,9 @@
 // Array of data
 var data = [
-    "Balance: " + string(money),
-    "Bad answer: " + string(bads),
-    "Good answers: " + string(goods),
-    "Day: " + string(Obj_Levels.index+1),
-    "33333622",
-    "hhhhhhhkJJ",
-    "Finaaaaaaal"
+    "Balance: " + string(Obj_Main.money),
+    "Bad answer: " + string(Obj_Main.bad),
+    "Good answers: " + string(Obj_Main.good),
+    "Scene: " + string(Obj_Levels.index+1)
 ];
 
 var start_x = 16;

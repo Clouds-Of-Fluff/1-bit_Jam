@@ -1,10 +1,4 @@
-// Block state
-var t = instance_find(Obj_Transitioner, 0);
-if (instance_exists(Obj_Transitioner) and t.progress > 0 or Obj_Game.state != TSTATE.FINISHED) {
-	exit;
-    
-}
-
+if (state == TSTATE.FINISHED) {exit;}
 
 // Draw rectangles
 draw_set_colour(c_white);
@@ -22,3 +16,7 @@ draw_sprite(snake_boss, 0, 16, Y1 + 16);
 var bounce = sin(current_time / 150) * 1;
 draw_text(96, Y1 + 16, "Boss Snake:");
 draw_text(96, (Y1 + 32) + bounce, visible_text);
+
+if (state == TSTATE.WAIT_INPUT) {
+	draw_sprite_ext(triangle, 0, X2-16, (Y2-16)-bounce, 0.5, 0.5, 90, c_white, 1);
+}

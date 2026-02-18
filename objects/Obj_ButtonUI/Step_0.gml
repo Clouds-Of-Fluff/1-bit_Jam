@@ -33,25 +33,29 @@ btn_height = text_h + padding_y * 2;
 // Click
 if (!Obj_QuestionsController.selection_locked and 
     point_in_rectangle(mouse_x, mouse_y, x - (btn_width/2), y - (btn_height/2), 
-    x + (btn_width/2), y + (btn_height/2)) and mouse_check_button_pressed(mb_left)) {
+    x + (btn_width/2), y + (btn_height/2)) and 
+    mouse_check_button_pressed(mb_left)) {
 	
     // Change locked
     Obj_QuestionsController.selection_locked = true;
-    
     active = false; // False to answer
     
     // Selection
     if (value == 0) {
+        Obj_Main.bad++;
+        Obj_Main.money -= 200000;
+        
         show_debug_message("BAD ANSWER");
         
     } else {
+        Obj_Main.good++;
+        Obj_Main.money += 200000;
+        
         show_debug_message("GOOD ANSWER");
         
     }
     
-    
 }
-
 
 // Reaction "lerp(actual value, objective value, change velocity)"
 if (!active) { // False
@@ -67,3 +71,4 @@ image_xscale = size;
 image_yscale = size;
 
 #endregion
+
