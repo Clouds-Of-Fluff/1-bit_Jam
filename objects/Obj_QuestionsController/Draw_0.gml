@@ -20,5 +20,5 @@ draw_sprite(snake_boss, 0, 16, Y1 + 16);
 
 // Draw Text
 var bounce = sin(current_time / 150) * 1;
-draw_text(96, Y1 + 16, "Boss Snake:");
+draw_text(96, Y1 + 16, "Secretary Snake:");
 draw_text(96, (Y1 + 32) + bounce, visible_text);
