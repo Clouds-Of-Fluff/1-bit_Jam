@@ -20,6 +20,7 @@
   "height":64,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"1b6f7477-6308-4e0e-9488-f3ac9c6b5d63","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"1b6f7477-6308-4e0e-9488-f3ac9c6b5d63","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"b29f2137-f7f8-43da-97d8-60e71870f2f5","blendMode":0,"displayName":"default","isLocked":false,"name":"b29f2137-f7f8-43da-97d8-60e71870f2f5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"snake_boss",

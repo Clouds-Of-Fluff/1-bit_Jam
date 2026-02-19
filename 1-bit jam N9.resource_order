@@ -28,6 +28,7 @@
     {"name":"Rm_Level3","order":4,"path":"rooms/Rm_Level3/Rm_Level3.yy",},
     {"name":"Rm_Level4","order":5,"path":"rooms/Rm_Level4/Rm_Level4.yy",},
     {"name":"Rm_Menu","order":1,"path":"rooms/Rm_Menu/Rm_Menu.yy",},
+    {"name":"Scr_DialogueBox","order":4,"path":"scripts/Scr_DialogueBox/Scr_DialogueBox.yy",},
     {"name":"Scr_Enums","order":1,"path":"scripts/Scr_Enums/Scr_Enums.yy",},
     {"name":"Scr_PaginateText","order":3,"path":"scripts/Scr_PaginateText/Scr_PaginateText.yy",},
     {"name":"Scr_Texts","order":2,"path":"scripts/Scr_Texts/Scr_Texts.yy",},
