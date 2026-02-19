@@ -5,9 +5,9 @@ function Scr_Questions(_index) {
     var quests = [
         ["Who's offer are you taking?", 1, 0, "USA", "Germany"],
         ["So, what's it gonna be?", 0, 1, "Hire expensive labor", "Hire cheap labor"],
-		["What will you do? Medicine or Compost?", 0, 1, "Sell to medical labs", "Compost and feed animals"],
-		["Silence or donation?", 1, 0, "Buy silence", "Workers safety iniciative"],
-		["$150,000 to infrastructure or $95,000 for press?", 0, 1, "$150,000", "$95,000"]
+		["What will you do? Medicine or Compost?", 0, 1, "Compost and feed animals", "Sell to medical labs"],
+		["Silence or donation?", 0, 1, "Buy silence", "Workers safety iniciative"],
+		["$150,000 to infrastructure or $95,000 for press?", 1, 0, "$150,000", "$95,000"]
         
     ];
     
