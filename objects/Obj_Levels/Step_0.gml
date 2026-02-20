@@ -9,6 +9,7 @@ if (q.state == QSTATE.TRANSITION && !changing) {
     
     if (!instance_exists(Obj_Transitioner)) {
         instance_create_depth(0, 0, -1000, Obj_Transitioner);
+        
     }
 }
 
@@ -16,12 +17,15 @@ if (q.state == QSTATE.TRANSITION && !changing) {
 var t = instance_find(Obj_Transitioner, 0);
 if (changing && instance_exists(t)) {
     if (t.progress >= 1) {
-        changing = false;
         
         index++;
+        
         if (index < array_length(rooms)) {
             room_goto(rooms[index]);
             
         }
+        
+        changing = false;
     }
 }
+

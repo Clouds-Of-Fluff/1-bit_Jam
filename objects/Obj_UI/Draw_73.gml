@@ -1,3 +1,7 @@
+if (instance_exists(Obj_Transitioner)) {
+	exit;
+}
+
 // Draw top UI
 draw_set_colour(c_white);
 draw_rectangle(0, 0, X1, Y1, false);

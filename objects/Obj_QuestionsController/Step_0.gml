@@ -1,8 +1,8 @@
 // Block state
 var t = instance_find(Obj_Transitioner, 0);
-if ((instance_exists(Obj_Transitioner) and Obj_Transitioner.progress <= 0) or 
-    (instance_exists(Obj_Transitioner) and t.progress > 0) or 
+if ((instance_exists(t) and t.progress <= 0) or (instance_exists(t) and t.progress > 0) or 
     Obj_Game.state != TSTATE.FINISHED) {
+    
 	exit;
     
 }
@@ -31,12 +31,12 @@ switch (state) {
     case QSTATE.WAITING:
         if (!buttons_created) {
             // Bad Choice
-            var btn_1 = instance_create_layer(X2 - 96, Y1 - 96, "Instances", Obj_ButtonUI);
+            var btn_1 = instance_create_layer(X2 - 112, Y1 - 96, "Instances", Obj_ButtonUI);
             btn_1.value = value1;
             btn_1.text = text1;
             
             // Good Choice
-            var btn_2 = instance_create_layer(X2 - 96, Y1 - 32, "Instances", Obj_ButtonUI);
+            var btn_2 = instance_create_layer(X2 - 112, Y1 - 32, "Instances", Obj_ButtonUI);
             btn_2.value = value2;
             btn_2.text = text2;
             

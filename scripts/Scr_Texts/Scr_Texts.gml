@@ -14,8 +14,8 @@ function Scr_Texts(_index){
         
         "[Few days later] It appears some of your workers have died from exhaustion. Well, it happens. At least we didn't lose a profit. " + 
         "Now you can't let this news get out, else your reputation is wasted. Perhaps there is a way to profit from it. " + 
-        "Option 1 - Sell to Medical Labs: Some contacts offer to buy the bodies for research and medical purposes. It's discreet, and the money is decent. " + 
-        "Option 2 - Compost and Animal Feed: Another offer comes: the bodies could be turned into compost or animal feed. Less profit than medical labs, but still usable.",
+        "Option 1 - Compost and Animal Feed: Another offer comes: the bodies could be turned into compost or animal feed. Less profit than medical labs, but still usable." + 
+        "Option 2 - Sell to Medical Labs: Some contacts offer to buy the bodies for research and medical purposes. It's discreet, and the money is decent. ",
         
         "Well... whispers are spreading. Families are asking questions. Journalists are sniffing around. " + 
         "A scandal could destroy your stock value overnight. But every crisis... is an opportunity for a profit. " + 

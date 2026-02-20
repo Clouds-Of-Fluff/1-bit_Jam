@@ -1,0 +1,14 @@
+// Init
+text = "";
+active = false;
+
+// Visual
+size = 1.0; // i think 0.9 for the "false" and 1 for the "true"
+image_speed = 0;
+
+// Size
+padding_x = 24;  // internal space left/right
+padding_y = 12;
+min_width = 32;  // Minimun wight optional
+btn_width = 0;
+btn_height = 0;
