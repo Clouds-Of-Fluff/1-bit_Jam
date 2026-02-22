@@ -5,9 +5,14 @@ for (var i = 0; i < array_length(particles); i++) {
     draw_set_alpha(p.alpha);
     
     draw_text(p.x, p.y, symbol + string(p.value));
-    draw_sprite_ext(arrow, 0, p.x+string_length(p.value)+16, p.y+8, 0.5, aspect*0.5, 0, c_white, 1);
+    draw_set_alpha(p.alpha);
+    draw_sprite_ext(arrow, 0, p.x + string_length(p.value) + 48, 
+    p.y + 8, 0.5, aspect * 0.5, 0, c_white, 1);
+    draw_set_alpha(1);
+    
 }
 
+// Reset
 draw_set_alpha(1);
 
 
@@ -18,11 +23,10 @@ draw_text_transformed(cw / 2, ch / 3 - bounce, text, 4, 4, 0);
 
 // Define stats
 var data = [
-    "Final money: " + string(Obj_Main.money),
-    "Final scene: " + string(Obj_Main.index+1),
+    "Final money: $" + string(Obj_Main.money),
+    "Final scene: " + string(Obj_Main.index),
     "Bad answers: " + string(Obj_Main.bad),
-    "Good answers: " + string(Obj_Main.good),
-    
+    "Good answers: " + string(Obj_Main.good)
 ];
 
 // Draw stats
@@ -31,6 +35,3 @@ for (var i = 0; i < array_length(data); i++) {
 	draw_text(cw / 2, (ch / 2 + 16) + (16 * i) + bounce, data[i]);
     
 }
-
-// Draw return text
-draw_text(cw / 2, ch - 16 - bounce, "Press SPACE to return to the menu");

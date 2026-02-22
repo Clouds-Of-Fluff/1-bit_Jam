@@ -31,14 +31,3 @@ if (progress >= 1) {
     draw_sprite_ext(stairs, 0, cx, cy, 2, 2, 0, c_white, 1);
     draw_sprite_ext(triangle, 0, ax, ay, 2, 2, 0, c_white, 1);
 }
-
-
-var data = [
-    "t:"+ string(target_index),
-    "s:"+ string(start_index),
-    
-]
-
-for (var i = 0; i < array_length(data); i++) {
-	draw_text(64, 16*i, data[i]);
-}

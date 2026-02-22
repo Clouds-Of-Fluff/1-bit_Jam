@@ -37,7 +37,7 @@ Y2 = ch;
 others = false;
 
 // Pages
-pages = paginate_text(current_text, 500, 72);
+pages = paginate_text(current_text, 512, 72);
 page_index = 0;
 
 // Text

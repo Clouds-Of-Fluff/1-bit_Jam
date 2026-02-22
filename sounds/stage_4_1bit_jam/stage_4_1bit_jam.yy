@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"stage_4_1bit_jam",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":1,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":42.65651,
+  "exportDir":"",
+  "name":"stage_4_1bit_jam",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"stage_4_1bit_jam.ogg",
+  "volume":1.0,
+}

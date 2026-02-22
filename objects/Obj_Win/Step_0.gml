@@ -1,4 +1,4 @@
-// PARTICLES
+#region PARTICLES
 spawn_timer++;
 
 if (spawn_timer >= spawn_rate) {
@@ -6,8 +6,8 @@ if (spawn_timer >= spawn_rate) {
     
     if (win) {
     	var p = {
-            x: random(room_width),
-            y: room_height + 16,
+            x: random(cw),
+            y: ch + 16,
             speed_y: random_range(1, 3),
             alpha: 0,
             life: 120,
@@ -17,7 +17,7 @@ if (spawn_timer >= spawn_rate) {
         
     } else{
         var p = {
-            x: random(room_width),
+            x: random(cw),
             y: 16,
             speed_y: random_range(-3, -1),
             alpha: 0,
@@ -59,3 +59,14 @@ for (var i = array_length(particles) - 1; i >= 0; i--) {
         
     }
 }
+
+#endregion 
+
+#region BUTTONS
+if (!instance_exists(Obj_ButtonGame)) {
+	var r = instance_create_layer(128, ch - 32, self.layer, Obj_ButtonGame);
+    r.text = "Main menu";
+    
+}
+
+#endregion

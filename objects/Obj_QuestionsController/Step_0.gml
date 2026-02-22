@@ -31,12 +31,12 @@ switch (state) {
     case QSTATE.WAITING:
         if (!buttons_created) {
             // Bad Choice
-            var btn_1 = instance_create_layer(X2 - 112, Y1 - 96, "Instances", Obj_ButtonUI);
+            var btn_1 = instance_create_layer(X2 - 112, Y1 - 96, "Instances", Obj_ButtonGame);
             btn_1.value = value1;
             btn_1.text = text1;
             
             // Good Choice
-            var btn_2 = instance_create_layer(X2 - 112, Y1 - 32, "Instances", Obj_ButtonUI);
+            var btn_2 = instance_create_layer(X2 - 112, Y1 - 32, "Instances", Obj_ButtonGame);
             btn_2.value = value2;
             btn_2.text = text2;
             

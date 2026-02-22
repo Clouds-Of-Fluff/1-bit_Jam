@@ -1,8 +1,18 @@
+// Settings
+global.settings = {
+    fullscreen: true,
+    music: true,
+    sfx: true
+};
+
+global.master_volume = 1; // 0 to 1
+
 // Font
 draw_set_font(Fnt_Silver);
 
 // Sound
-
+audio_group_load(audiogroup_default);
+audio_group_set_gain(audiogroup_default, global.settings.music);
 
 // Effects
 gpu_set_tex_filter(false);
@@ -22,3 +32,4 @@ good = 0;
 bad = 0;
 money = 0;
 index = 0;
+

@@ -1,3 +1,9 @@
+#region MENU
+x = Obj_MainMenu.X;
+
+#endregion
+
+
 #region Text
 // Calculate desired size
 var text_w = string_width(text);
@@ -39,6 +45,7 @@ image_yscale = size;
 
 
 #region Actions
+// Active
 if (active) {
 	switch (text) {
     	case "Play":
@@ -48,13 +55,42 @@ if (active) {
             
             // Reset
             active = false;
-        break;
-        
-        case "Settings":
             
         break;
         
-        case "About":
+        case "Settings":
+            if (!instance_exists(Obj_SettingsButton)) {
+                var X = 128;
+                var Y = 128;
+                var d = self.depth;
+                
+                //// Music
+                var s = instance_create_depth(X * 1.5, Y, d - 100, Obj_VolumeSlider);
+                
+                // Fullscreen
+            	var f = instance_create_depth(X, Y + 32, d - 100, Obj_SettingsButton);
+                f.active = true;
+                f.name = "Fullscreen";
+                f.key = "fullscreen";
+                
+            }
+            
+            // Reset
+            active = false;
+            
+            
+        break;
+        
+        case "Credits":
+            if (!instance_exists(Obj_CreditsWindow)) {
+                
+                instance_create_layer(room_width/2, room_height/2, 
+                self.layer, Obj_CreditsWindow);
+                
+            }
+            
+            // Reset
+            active = false;
             
         break;
         
@@ -63,9 +99,13 @@ if (active) {
             
         break;
         
-        
+        default:
+            active = true;
+            
+        break;
     }
 }
 
-
 #endregion
+
+
