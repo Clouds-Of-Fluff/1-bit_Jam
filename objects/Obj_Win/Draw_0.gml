@@ -6,7 +6,7 @@ for (var i = 0; i < array_length(particles); i++) {
     
     draw_text(p.x, p.y, symbol + string(p.value));
     draw_set_alpha(p.alpha);
-    draw_sprite_ext(arrow, 0, p.x + string_length(p.value) + 48, 
+    draw_sprite_ext(arrow, 0, p.x + string_length(p.value) + 40, 
     p.y + 8, 0.5, aspect * 0.5, 0, c_white, 1);
     draw_set_alpha(1);
     
