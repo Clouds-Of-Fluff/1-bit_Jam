@@ -3,7 +3,7 @@ function Scr_Texts(_index){
         "Congratulations on your promotion. You earned it, but now you have to make sure you keep it. " + 
         "It isn't really that hard as long as you make the right decision. The previous CEO failed and almost made this company bankrupt. " +
         "We hope for the best from you. Anyways, after that CEO's poor choices, we are very short on funding. " + 
-        "Two powerful nations have decided to fund us. Listen to their offers and choose one correctly. They will meet you in the office.                                                                     " + 
+        "Two powerful nations have decided to fund us. Listen to their offers and choose one correctly. They will meet you in the office. " + 
         "Option 1 - The United States offers a loan: 5% of each barrel's profit goes to them until you repay three times the loan amount. " + 
         "Option 2 - Germany offers a loan: they'll take 3% equity per barrel until theyve made three times what they lent you.",
         

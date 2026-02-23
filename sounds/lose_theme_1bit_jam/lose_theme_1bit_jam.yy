@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"lose_theme_1bit_jam",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":1,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":4.730771,
+  "exportDir":"",
+  "name":"lose_theme_1bit_jam",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"lose_theme_1bit_jam.ogg",
+  "volume":1.0,
+}
